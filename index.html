@@ -15,178 +15,244 @@
         <h3>WALK IN INTERVIEW APPLICATION FORM</h3>
         <a class="switchBtn" href="MaterialUI.html">MaterialUI</a>
     </nav>
-    <section id="sec1">
-        <div id="img">
-            <label for="file">Affix your recent, coloured,
-                passport size photograph</label>
-            <input id="file" type="file" style="visibility: hidden;">
-        </div>
+    <form action="#">
 
-        <div id="data">
-            <div class="formLine">
-                <label>Date: </label>
-                <input type="date" />
-                <label>Position applied: </label>
-                <span><input class="myInput" type="text" /></span>
+        <section id="sec1">
+            <div id="img">
+                <label for="file">Affix your recent, coloured,
+                    passport size photograph</label>
+                <input id="file" type="file" style="visibility: hidden;">
             </div>
-            <div class="formLine">
-                <label>Full Name: </label>
-                <span><input type="text" /></span>
-            </div>
-            <div class="formLine">
-                <label>Date of Birth: </label>
-                <input type="date" />
-                <label>Native Place: </label>
-                <span><input class="myInput" type="text" /></span>
-            </div>
-            <div class="formLine">
-                <label>Gender: </label>
-                <span>
 
-                    <select>
-                        <option value="">Male</option>
-                        <option value="saab">Female</option>
-                        <option value="saab">Others</option>
-                    </select>
-                </span>
-                <label>Marital Status: </label>
-                <span>
-                    <select>
-                        <option value="">Single</option>
-                        <option value="saab">Married</option>
-                    </select>
-                </span>
+            <div id="data">
+                <div class="formLine">
+                    <label>Date: </label>
+                    <input type="date" required />
+                    <label>Position applied: </label>
+                    <span><input class="myInput" type="text" required /></span>
+                </div>
+                <div class="formLine">
+                    <label>Full Name: </label>
+                    <span><input id="fullName" class="myInput" type="text" required /></span>
+                </div>
+                <div class="formLine">
+                    <label>Date of Birth: </label>
+                    <input type="date" required />
+                    <label>Native Place: </label>
+                    <span><input class="myInput" type="text" required /></span>
+                </div>
+                <div class="formLine">
+                    <label>Gender: </label>
+                    <span>
+                        <select required>
+                            <option  value="male">Male</option>
+                            <option value="female" selected>Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </span>
+                    <label>Marital Status: </label>
+                    <span>
+                        <select required>
+                            <option  value="single">Single</option>
+                            <option value="married">Married</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="formLine">
+                    <label>Mobile Number: </label>
+                    <span><input id="phone" class="myInput" type="tel" required /></span>
+                    <label>Current Location: </label>
+                    <span><input class=" myInput" type="text" required /></span>
+                </div>
+                <div class="formLine">
+                    <label>Email address: </label>
+                    <span><input id="email" class="myInput" type="email" required /></span>
+                    <label>Skype address: </label>
+                    <span><input class="myInput" type="text" required /></span>
+                </div>
+                <div class="formLine">
+                    <label>Have you been interviewed with us in last six months?</label>
+                    <label style="padding: 0 5px;" for="html">Yes</label>
+                    <input type="radio" id="html" name="interviewed" value="HTML" required>
+                    <label style="padding:0 5px;" for="css">No</label>
+                    <input type="radio" id="css" name="interviewed" value="CSS" required>
+                </div>
+                <div class="formLine">
+                    <label>Do you smoke?</label>
+                    <label style="padding: 0 5px;" for="html">Yes</label>
+                    <input required type="radio" id="html" name="sutta" value="HTML">
+                    <label style="padding:0 5px;" for="css">No</label>
+                    <input required type="radio" id="css" name="sutta" value="CSS">
+                    <label style="margin-left: 50px;">Do you consume alcohol?</label>
+                    <label style="padding: 0 5px;" for="html">Yes</label>
+                    <input required type="radio" id="html" name="daru" value="HTML">
+                    <label style="padding:0 5px;" for="css">No</label>
+                    <input required type="radio" id="css" name="daru" value="CSS">
+                </div>
+                <div class="formLine">
+                    <label>Differently abled?</label>
+                    <label style="padding: 0 5px;" for="html">Yes</label>
+                    <input required type="radio" id="html" name="disable" value="HTML">
+                    <label style="padding:0 5px;" for="css">No</label>
+                    <input required type="radio" id="css" name="disable" value="CSS">
+                    <label style="margin-left: 50px;">Do you have police record?</label>
+                    <label style="padding: 0 5px;" for="html">Yes</label>
+                    <input required type="radio" id="html" name="police" value="HTML">
+                    <label style="padding:0 5px;" for="css">No</label>
+                    <input required type="radio" id="css" name="police" value="CSS">
+                </div>
             </div>
-            <div class="formLine">
-                <label>Mobile Number: </label>
-                <span><input class="myInput" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" /></span>
-                <label>Current Location: </label>
-                <span><input class="myInput" type="text" /></span>
-            </div>
-            <div class="formLine">
-                <label>Email address: </label>
-                <span><input class="myInput" type="email" /></span>
-                <label>Skype address: </label>
-                <span><input  class="myInput" type="text" /></span>
-            </div>
-            <div class="formLine">
-                <label>Have you been interviewed with us in last six months?</label>
+        </section>
+        <section id="sec2">
+            <div class="formline">
+                <label for="">Do you have history of any major illness?</label>
                 <label style="padding: 0 5px;" for="html">Yes</label>
-                <input type="radio" id="html" name="fav_language" value="HTML">
+                <input required type="radio" id="html" name="illness" value="HTML">
                 <label style="padding:0 5px;" for="css">No</label>
-                <input type="radio" id="css" name="fav_language" value="CSS">
+                <input required type="radio" id="css" name="illness" value="CSS">
             </div>
-            <div class="formLine">
-                <label>Do you smoke?</label>
-                <label style="padding: 0 5px;" for="html">Yes</label>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label style="padding:0 5px;" for="css">No</label>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label style="margin-left: 50px;">Do you consume alcohol?</label>
-                <label style="padding: 0 5px;" for="html">Yes</label>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label style="padding:0 5px;" for="css">No</label>
-                <input type="radio" id="css" name="fav_language" value="CSS">
+            <div>How did you learn about the opening? (Tick the appropriate option) – Newspaper advertisement | Company
+                website |Friend or relative | Job portal | Social media</div>
+            <div>
+                <table style="margin: 0px;max-width:100vw;">
+                    <tr>
+                        <th>Class</th>
+                        <th>Degree</th>
+                        <th>Name of the school| college</th>
+                        <th>Board | University</th>
+                        <th>Regular | Part time</th>
+                        <th>Month and Year of passing</th>
+                        <th>No. of attempts</th>
+                        <th style="min-width: 50px;">%</th>
+                    </tr>
+                    <tr>
+                        <td>10<sup>th</sup></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>12 <sup>th</sup> </td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Graduation</td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Post Graduation</td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Any other</td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Academic gap?
+                            <label style="padding: 0 5px;" for="html">Yes</label>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label style="padding:0 5px;" for="css">No</label>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                        </td>
+                        <td>Number of backlogs | ATKTs if any</td>
+                    </tr>
+                </table>
             </div>
-            <div class="formLine">
-                <label>Differently abled?</label>
-                <label style="padding: 0 5px;" for="html">Yes</label>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label style="padding:0 5px;" for="css">No</label>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label style="margin-left: 50px;">Do you have police record?</label>
-                <label style="padding: 0 5px;" for="html">Yes</label>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label style="padding:0 5px;" for="css">No</label>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-            </div>
-        </div>
-    </section>
-    <section id="sec2">
-        <div class="formline">
-            <label for="">Do you have history of any major illness?</label>
-            <label style="padding: 0 5px;" for="html">Yes</label>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label style="padding:0 5px;" for="css">No</label>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-        </div>
-        <div>How did you learn about the opening? (Tick the appropriate option) – Newspaper advertisement | Company
-            website |Friend or relative | Job portal | Social media</div>
-        <div>
-            <table style="margin: 0px;max-width:100vw;">
-                <tr>
-                    <th>Class</th>
-                    <th>Degree</th>
-                    <th>Name of the school| college</th>
-                    <th>Board | University</th>
-                    <th>Regular | Part time</th>
-                    <th>Month and Year of passing</th>
-                    <th>No. of attempts</th>
-                    <th style="min-width: 50px;">%</th>
-                </tr>
-                <tr>
-                    <td>10<sup>th</sup></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                </tr>
-                <tr>
-                    <td>12 <sup>th</sup> </td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                </tr>
-                <tr>
-                    <td>Graduation</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                </tr>
-                <tr>
-                    <td>Post Graduation</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                </tr>
-                <tr>
-                    <td>Any other</td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                    <td><input type="text"/></td>
-                </tr>
-                <tr>
-                    <td>Academic gap?
-                        <label style="padding: 0 5px;" for="html">Yes</label>
-                        <input type="radio" id="html" name="fav_language" value="HTML">
-                        <label style="padding:0 5px;" for="css">No</label>
-                        <input type="radio" id="css" name="fav_language" value="CSS">
-                    </td>
-                    <td>Number of backlogs | ATKTs if any</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+        </section>
+        <div style="display: flex; justify-content:center">
 
+            <button class="switchBtn" type="submit" onclick="submitt()">Submitt</button>
+            <button type="reset" class="switchBtn">Reset</button>
+        </div>
+    </form>
+
+
+    <script>
+        let fullNameRegex = /^[A-Za-z]+$/;
+        let phoneRegex = /[0-9]{10}/;
+        let emailRegex = /^([\w\d\-]{2,64})@([\w\d\-]+)\.(\w){2,8}(\.(\w){2,8})*$/;
+
+        let fullName = document.getElementById("fullName");
+        let phone = document.getElementById("phone");
+        let email = document.getElementById("email");
+
+        var validName = false;
+        var validPhone = false;
+        var validEmail = false;
+
+        let nameErr = document.getElementById("NameErr");
+        let phoneErr = document.getElementById("phoneErr");
+        let emailErr = document.getElementById("emailErr");
+
+        fullName.addEventListener("blur", () => {
+            if (fullNameRegex.test(fullName.value)) {
+                fullName.style.color = "black";
+                validName = true;
+                // nameErr.style.visibility = "hidden;"
+            } else {
+                fullName.style.color = "red";
+                validName = false;
+                // nameErr.style.visibility = "visible"
+            }
+        })
+        phone.addEventListener("blur", () => {
+            console.log("blur working");
+            if (phoneRegex.test(phone.value)) {
+                validPhone = true;
+                phone.style.color = "black";
+                // phoneErr.style.visibility = "hidden";
+            } else {
+                validPhone = false;
+                phone.style.color = "red"
+                // phoneErr.style.visibility = "visible";
+            }
+        })
+        email.addEventListener("blur", () => {
+            if (emailRegex.test(email.value)) {
+                validEmail = true;
+                email.style.color = "black";
+            } else {
+                email.style.color = "red";
+                validEmail = false;
+            }
+        })
+        function submitt() {
+            console.log(validEmail, validPhone, validName);
+            if (validEmail && validName && validPhone) {
+                alert("Form submitted");
+            } else {
+                alert("enter valid credentials")
+            }
+        }
+    </script>
 </body>
 
 </html>
