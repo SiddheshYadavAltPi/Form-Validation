@@ -58,89 +58,296 @@
     nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   </style>
   <title>Bootstrap</title>
 </head>
 
 <body>
-  <nav class="container">
+  <nav>
     <a class="switchBtn" href="index.html">Vanilla</a>
     <h3>WALK IN INTERVIEW APPLICATION FORM</h3>
     <a class="switchBtn" href="MaterialUI.html">MaterialUI</a>
   </nav>
   <section class="container">
-    <div class="row align-content-center">
-      <div style="height: fit-content;" class="col-md-2">
-        <div style="border: 1px solid rgb(212, 212, 212);" class="mb-3 p-3">
-          Affix your recent, coloured,passport size photograph
-          <label for="formFile" class="form-label">Default file input example</label>
-          <input class="form-control" type="file" id="formFile">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Passport size photo:</label>
+        <input type="file" class="form-control" id="validationCustom01" value="" required>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom01" class="form-label">Date:</label>
+        <input type="Date" class="form-control" id="validationCustom01" value="" required>
+      </div>
+      <div class="col-md-5">
+        <label for="validationCustom01" class="form-label">Position applied:</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
         </div>
       </div>
-      <div class="col-md-10">
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Date:</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Date:</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
-          </div>
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </div>
-        </form>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Date of Birth:</label>
+        <input type="Date" class="form-control" id="validationCustom01" value="" required>
       </div>
-    </div>
+      <div class="col-md-8">
+        <label for="validationCustom01" class="form-label">Native place:</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">Gender:</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected value="Male">Male</option>
+          <option value="female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a Gender.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">Marital Status:</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected value="Single">Single</option>
+          <option value="Married">Married</option>
+        </select>
+        <div class="invalid-feedback">
+          Please state your marital status.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="UserMobile" class="form-label">Mobile Number:</label>  
+        <input type="text" id="UserMobile" maxlength="14" data-fv-numeric="true"
+        data-fv-numeric-message="Please enter valid phone numbers" data-fv-phone-country11="IN" required="required"
+        data-fv-notempty-message="This field cannot be left blank." placeholder="Mobile No. " class="form-control"
+        name="data[User][mobile]" data-fv-field="data[User][mobile]">
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Native place:</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label m-3">Have you been interviewed with us in last six months?</label>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label m-3">Do you smoke?</label>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label m-3">Do you consume alcohol?</label>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label m-3">Differently abled?</label>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label m-3">Do you have police record?</label>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label m-3">Do you have history of any major illness?</label>        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <label for="" class="form-label">How did you learn about the opening?(Tick the appropriate option)</label> <br>       
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Newspaper advertisement|
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Company website|
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Job Portal|
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Freind or relative|
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Social Media|
+        </div>
+      </div>
+      <table class="table table-bordered mw-100">
+        <thead>
+          <tr>
+            <th scope="col">Class</th>
+            <th scope="col">Degree</th>
+            <th scope="col">Name of the school | college</th>
+            <th scope="col">Board | University</th>
+            <th scope="col">Regular | Part time</th>
+            <th scope="col">Month and year of passing</th>
+            <th scope="col">No. of attempts</th>
+            <th scope="col">%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">10<sup>th</sup></th>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+          </tr>
+          <tr>
+            <th scope="row">12<sup>th</sup></th>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+          </tr>
+          <tr>
+            <th scope="row">Graduation</th>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+          </tr>
+          <tr>
+            <th scope="row">Post Graduation</th>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+          </tr>
+          <tr>
+            <th scope="row">Any Other</th>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+            <td class="text-center"><input style="border: none; max-width:120px; outline: none;" type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+       
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
   </section>
+  
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
 
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
 
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })() 
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>

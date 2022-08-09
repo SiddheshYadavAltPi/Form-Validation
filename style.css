@@ -140,6 +140,10 @@ table,th,tr,td{
   border:1px solid darkgray;
   border-collapse: collapse;
 }
+td{
+  /* padding: 10px; */
+  text-align: center;
+}
 
 /* .tooltiptext {
     visibility: hidden;
